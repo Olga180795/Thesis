@@ -64,6 +64,7 @@ header {
 }
 main {
   display: flex;
+  position: relative;
 }
 .photo {
   width: 996px;
@@ -122,6 +123,11 @@ main {
   background: #2B3541;
   color: #FBF138;
 }
+button, 
+button:active, 
+button:focus {
+  outline: none;
+}
 .arrow {
   position: absolute;
   left: 425px;
@@ -134,10 +140,171 @@ main {
 }
 .event-item.event-title {
   padding-left: 332px;
+  display: flex;
+  justify-content: flex-start;
 }
 .section-event {
   padding-top: 100px;
 }
 .event-description {
   display: flex;
+  justify-content: center;
 }
+.event-item {
+  display: flex;
+  position: relative;
+  z-index: 1;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.event-point {
+  position: absolute;
+  z-index: 2;
+  padding-top: 8px;
+  padding-left: 33px;
+  padding-bottom: 200px;
+}
+.event-data {
+  font-weight: 700;
+  line-height: 150%;
+  opacity: 0.6;
+}
+.event-name {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 125%;
+}
+.event-text {
+  line-height: 150%;
+  width: 126px;
+  height: 47px;
+  background-color: #FBF138;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+.event-kind {
+  z-index: 2;
+  padding-top: 357px;
+  margin-left: 209px;
+}
+.event-img {
+  width: 366px;
+  height: 600px;
+}
+.gradient-img {
+	display: inline-block;
+	position: relative;    
+	line-height: 0;
+}
+.gradient-img:hover:after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 100%;    
+	position: absolute;
+	top: 0;    
+	left: 0;   
+	background: transparent;
+	background-image:  linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0) 100%);    
+	opacity: 0.6;    
+}
+.event-fellowship {
+  line-height: 150%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  width: 221px;
+  height: 64px;
+  background-color:#2B3541;
+  box-shadow: 0px 13px 24px rgba(70, 86, 106, 0.28);
+  color: #FBF138;
+  font-weight: 700;
+  font-size: 16px;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+.timetable {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 319px;
+  padding-top: 120px;
+  padding-left: 338px;
+}
+.timetable-box {
+  border: 1px solid rgba(43, 53, 65, 0.5);
+  box-sizing: border-box;
+}
+.timetable-data {
+  line-height: 150%;
+  opacity: 0.7;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 30px;
+}
+.timetable-name {
+  font-weight: 700;
+  line-height: 150%;
+  padding-top: 20px;
+}
+.timetable-img {
+  padding-left: 30px;
+  padding-right: 10px;
+}
+.body {
+  width: 65px;
+  height: 65px;
+}
+.sculpt {
+  width: 43px;
+  height: 85px;
+}
+.lab {
+  width: 91px;
+  height: 50px
+}
+.jump {
+  width: 67px;
+  height: 106px;
+}
+.heart {
+  width: 65px;
+  height: 61px;   
+}
+.weight {
+  width: 58px;
+  height: 66px;
+}
+.timetable-body,
+.timetable-sculpt, 
+.timetable-lab,
+.timetable-jump, 
+.timetable-heart, 
+.timetable-weight {
+  width: 367px;
+}
+.timetable-body {
+  height: 250px;
+}
+.timetable-sculpt {
+  height: 402px;
+}
+.timetable-lab {
+  height: 309px;
+}
+.timetable-jump {
+  height: 433px;
+}
+.timetable-heart {
+  height: 282px;
+}
+.timetable-weight {
+  height: 375px;
+}
+
+
+
+
+
