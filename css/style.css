@@ -2,13 +2,20 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-size: 18px;
 }
-.wrapper {
+.wrapper, 
+.gradient-wrapper {
   max-width: 1800px;
   margin: 0 auto;
-  background-color: rgba(254, 252, 254, 1);
   padding-left: 46px;
   padding-right: 61px;
   color: #2B3541;
+}
+.wrapper {
+  background-color: rgba(254, 252, 254, 1);
+}
+.gradient-wrapper {
+  background: #F3F3F3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .logo {
   width: 97px;
@@ -125,7 +132,9 @@ main {
 }
 button, 
 button:active, 
-button:focus {
+button:focus,
+input:active, 
+input:focus {
   outline: none;
 }
 .arrow {
@@ -303,6 +312,116 @@ button:focus {
 .timetable-weight {
   height: 375px;
 }
+.form-title {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding-top: 38px;
+}
+.circle {
+  width: 106px;
+  height: 106px;
+  position: absolute;
+  left: 546px;
+  bottom: 15px;
+  z-index: 1;
+}
+.form-title .title-h3 {
+  position: relative;
+  z-index: 2;
+}
+.form-item {
+  display: flex;
+  justify-content: space-evenly;
+  margin-right: 565px;
+  margin-left: 575px;
+}
+.input-email {
+  width: 347px;
+  padding: 20px 16px 18px;
+  border: none;
+}
+.form-item .button {
+  width: 225px;
+}
+.form-footer {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  margin: 0;
+  padding-bottom: 67px;
+}
+.form-footer a {
+  color: #2B3541;
+}
+.click {
+  position: absolute;
+  bottom: 75px;
+  left: 600px;
+}
+.click:hover {
+  background-image: url(/icons/check_box.svg)
+}
+.form-footer p {
+  font-size: 11px;
+  line-height: 150%;
+  opacity: 0.5;
+  padding-right: 288px;
+  padding-top: 3px;
+}
+.section-about {
+  padding-top: 165px;
+  padding-bottom: 154px;
+}
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.about-item {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding-left: 329px;
+}
+.gradient-about {
+  width: 581px;
+  height: 335px;
+}
+.about-text {
+  width: 483px;
+  line-height: 150%;
+}
+.about-item .title-h3 {
+  margin: 0;
+}
+.about-item .button {
+  width: 225px;
+  margin-top: 18px;
+}
+.about-img {
+  margin: 0;
+  padding-right: 329px;
+}
+.skill {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 61px;
+  margin-right: 12%;
+  margin-left: 18%;
+}
+.skill-item{
+  flex: 0 0 22%;
+  margin-right: 3%;
+}
+.title-skill {
+  font-weight: 700;
+  line-height: 125%;
+}
+.skill-description {
+  line-height: 150%;
+  opacity: 0.6;
+}
+
 
 
 
